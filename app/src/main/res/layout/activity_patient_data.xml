@@ -86,6 +86,15 @@
         android:layout_marginLeft="50dp"
         android:layout_marginTop="25dp" />
 
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:hint="Zabieg nr 1"
+
+        app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber"
+        app:layout_constraintLeft_toRightOf="@id/buttonColorCase0"
+        android:layout_marginTop="25dp"/>
 
 
 </android.support.constraint.ConstraintLayout>
