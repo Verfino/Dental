@@ -10,14 +10,14 @@
         android:id="@+id/editTextLastName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="75dp"
         android:ems="10"
-
-        android:hint="Nazwisko"
         android:inputType="textPersonName"
+        android:hint="@string/surname"
+
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="50dp"/>
 
     <EditText
         android:id="@+id/editTextFirstName"
@@ -25,11 +25,11 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Imię"
+        android:hint="@string/name"
 
         app:layout_constraintTop_toBottomOf="@id/editTextLastName"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
         android:layout_marginLeft="50dp" />
 
     <EditText
@@ -38,11 +38,63 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="phone"
-        android:hint="Telefon"
+        android:hint="@string/phone"
 
         app:layout_constraintTop_toBottomOf="@id/editTextFirstName"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
         android:layout_marginLeft="50dp"/>
+
+    <Button
+        android:id="@+id/buttonColorCase0"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/colorCase0"
+
+        app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp" />
+    <Button
+        android:id="@+id/buttonColorCase1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/colorCase1"
+
+        app:layout_constraintTop_toBottomOf="@id/buttonColorCase0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp" />
+    <Button
+        android:id="@+id/buttonColorCase2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/colorCase2"
+
+        app:layout_constraintTop_toBottomOf="@id/buttonColorCase1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp" />
+    <Button
+        android:id="@+id/buttonColorCase3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/colorCase3"
+
+        app:layout_constraintTop_toBottomOf="@id/buttonColorCase2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:hint="Zabieg nr 1"
+
+        app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber"
+        app:layout_constraintLeft_toRightOf="@id/buttonColorCase0"
+        android:layout_marginTop="25dp"/>
+
 
 </android.support.constraint.ConstraintLayout>
