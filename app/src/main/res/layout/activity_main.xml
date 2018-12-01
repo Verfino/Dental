@@ -31,6 +31,6 @@
         android:layout_below="@+id/RelativeLayoutTop"
         android:text="Kliknij aby przejść do tworzenia planu"
         android:textSize="20dp"
-        android:onClick="ClickNextPage"
+        android:onClick="onClickActivityPatientData"
         android:background="#ffff"/>
 </RelativeLayout>
