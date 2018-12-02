@@ -7,7 +7,6 @@ import android.widget.AutoCompleteTextView;
 import android.widget.MultiAutoCompleteTextView;
 
 public class ActivityPatientData extends AppCompatActivity {
-    //todo Check differences between multiAutoCompleteTextView and AutoCompleteTextView
     private static final String[] TREATMENTS = new String[] {
             "Leczenie kanalowe", "Mostek", "Korona", "Wyrywanie zeba","Leczenie zabkow"
     };
@@ -18,7 +17,7 @@ public class ActivityPatientData extends AppCompatActivity {
         setContentView(R.layout.activity_patient_data);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, TREATMENTS);
-        MultiAutoCompleteTextView textView = (MultiAutoCompleteTextView) findViewById(R.id.multiAutoCompleteTextView1);
+        AutoCompleteTextView textView = (AutoCompleteTextView) findViewById(R.id.AutoCompleteTextView1);
         textView.setAdapter(adapter);
     }
 }
