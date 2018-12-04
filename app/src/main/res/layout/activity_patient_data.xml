@@ -87,13 +87,40 @@
         android:layout_marginTop="25dp" />
 
     <AutoCompleteTextView
-        android:id="@+id/AutoCompleteTextView1"
-        android:layout_width="150dp"
+        android:id="@+id/AutoCompleteTextViewTreatment1"
+        android:layout_width="300dp"
         android:layout_height="50dp"
-        android:hint="Zabieg nr 1"
+        android:hint="@string/treatment_hint"
 
         app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber"
         app:layout_constraintLeft_toRightOf="@id/buttonColorCase0"
+        android:layout_marginTop="25dp"/>
+    <AutoCompleteTextView
+        android:id="@+id/AutoCompleteTextViewTreatment2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="@string/treatment_hint"
+
+        app:layout_constraintTop_toBottomOf="@id/AutoCompleteTextViewTreatment1"
+        app:layout_constraintLeft_toRightOf="@id/buttonColorCase1"
+        android:layout_marginTop="25dp"/>
+    <AutoCompleteTextView
+        android:id="@+id/AutoCompleteTextViewTreatment3"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="@string/treatment_hint"
+
+        app:layout_constraintTop_toBottomOf="@id/AutoCompleteTextViewTreatment2"
+        app:layout_constraintLeft_toRightOf="@id/buttonColorCase2"
+        android:layout_marginTop="25dp"/>
+    <AutoCompleteTextView
+        android:id="@+id/AutoCompleteTextViewTreatment4"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="@string/treatment_hint"
+
+        app:layout_constraintTop_toBottomOf="@id/AutoCompleteTextViewTreatment3"
+        app:layout_constraintLeft_toRightOf="@id/buttonColorCase3"
         android:layout_marginTop="25dp"/>
 
 

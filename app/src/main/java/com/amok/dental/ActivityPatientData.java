@@ -17,7 +17,14 @@ public class ActivityPatientData extends AppCompatActivity {
         setContentView(R.layout.activity_patient_data);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, TREATMENTS);
-        AutoCompleteTextView textView = (AutoCompleteTextView) findViewById(R.id.AutoCompleteTextView1);
-        textView.setAdapter(adapter);
+        AutoCompleteTextView textViewTreatment1 = (AutoCompleteTextView) findViewById(R.id.AutoCompleteTextViewTreatment1);
+        AutoCompleteTextView textViewTreatment2 = (AutoCompleteTextView) findViewById(R.id.AutoCompleteTextViewTreatment2);
+        AutoCompleteTextView textViewTreatment3 = (AutoCompleteTextView) findViewById(R.id.AutoCompleteTextViewTreatment3);
+        AutoCompleteTextView textViewTreatment4 = (AutoCompleteTextView) findViewById(R.id.AutoCompleteTextViewTreatment4);
+        textViewTreatment1.setAdapter(adapter);
+        textViewTreatment2.setAdapter(adapter);
+        textViewTreatment3.setAdapter(adapter);
+        textViewTreatment4.setAdapter(adapter);
+
     }
 }
