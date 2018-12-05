@@ -6,123 +6,200 @@
     android:layout_height="match_parent"
     tools:context=".ActivityPatientData">
 
-     <EditText
+    <EditText
         android:id="@+id/editTextLastName"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="@string/surname"
-
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="75dp"
-        android:layout_marginLeft="50dp"/>
+        android:ems="10"
+
+        android:hint="@string/surname"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextFirstName"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="@string/name"
-
-        app:layout_constraintTop_toBottomOf="@id/editTextLastName"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="25dp"
-        android:layout_marginLeft="50dp" />
+        android:ems="10"
+
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextLastName" />
 
     <EditText
         android:id="@+id/editTextPhoneNumber"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="phone"
-        android:hint="@string/phone"
-
-        app:layout_constraintTop_toBottomOf="@id/editTextFirstName"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="25dp"
-        android:layout_marginLeft="50dp"/>
+        android:ems="10"
 
+        android:hint="@string/phone"
+        android:inputType="phone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextFirstName" />
+    //Todo: add editText for date of birth
     <Button
         android:id="@+id/buttonColorCase0"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="@color/colorCase0"
-
-        app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber"
-        app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="25dp" />
+
+        android:layout_marginTop="25dp"
+        android:background="@color/colorCase0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber" />
+
     <Button
         android:id="@+id/buttonColorCase1"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="@color/colorCase1"
-
-        app:layout_constraintTop_toBottomOf="@id/buttonColorCase0"
-        app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="25dp" />
+
+        android:layout_marginTop="25dp"
+        android:background="@color/colorCase1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonColorCase0" />
+
     <Button
         android:id="@+id/buttonColorCase2"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="@color/colorCase2"
-
-        app:layout_constraintTop_toBottomOf="@id/buttonColorCase1"
-        app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="25dp" />
+
+        android:layout_marginTop="25dp"
+        android:background="@color/colorCase2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonColorCase1" />
+
     <Button
         android:id="@+id/buttonColorCase3"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="@color/colorCase3"
-
-        app:layout_constraintTop_toBottomOf="@id/buttonColorCase2"
-        app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="25dp" />
+
+        android:layout_marginTop="25dp"
+        android:background="@color/colorCase3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonColorCase2" />
 
     <AutoCompleteTextView
         android:id="@+id/AutoCompleteTextViewTreatment1"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:hint="@string/treatment_hint"
+        android:layout_marginTop="25dp"
 
-        app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber"
+        android:hint="@string/treatment_hint"
         app:layout_constraintLeft_toRightOf="@id/buttonColorCase0"
-        android:layout_marginTop="25dp"/>
+        app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber" />
+
     <AutoCompleteTextView
         android:id="@+id/AutoCompleteTextViewTreatment2"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:hint="@string/treatment_hint"
+        android:layout_marginTop="25dp"
 
-        app:layout_constraintTop_toBottomOf="@id/AutoCompleteTextViewTreatment1"
+        android:hint="@string/treatment_hint"
         app:layout_constraintLeft_toRightOf="@id/buttonColorCase1"
-        android:layout_marginTop="25dp"/>
+        app:layout_constraintTop_toBottomOf="@id/AutoCompleteTextViewTreatment1" />
+
     <AutoCompleteTextView
         android:id="@+id/AutoCompleteTextViewTreatment3"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:hint="@string/treatment_hint"
+        android:layout_marginTop="25dp"
 
-        app:layout_constraintTop_toBottomOf="@id/AutoCompleteTextViewTreatment2"
+        android:hint="@string/treatment_hint"
         app:layout_constraintLeft_toRightOf="@id/buttonColorCase2"
-        android:layout_marginTop="25dp"/>
+        app:layout_constraintTop_toBottomOf="@id/AutoCompleteTextViewTreatment2" />
+
     <AutoCompleteTextView
         android:id="@+id/AutoCompleteTextViewTreatment4"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+
         android:hint="@string/treatment_hint"
-
-        app:layout_constraintTop_toBottomOf="@id/AutoCompleteTextViewTreatment3"
         app:layout_constraintLeft_toRightOf="@id/buttonColorCase3"
-        android:layout_marginTop="25dp"/>
+        app:layout_constraintTop_toBottomOf="@id/AutoCompleteTextViewTreatment3" />
 
+    <!--Buttons for each tooth-->
+
+    <!--Button for tooth 21-28-->
+    <Button
+        android:id="@+id/buttonTooth21"
+        style="@style/ButtonToothTheme"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="280dp"/>
+    <Button
+        android:id="@+id/buttonTooth22"
+        style="@style/ButtonToothTheme"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonTooth21"
+
+        android:layout_marginRight="260dp"
+        />
+    <Button
+    android:id="@+id/buttonTooth23"
+    style="@style/ButtonToothTheme"
+
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/buttonTooth22"
+
+    android:layout_marginRight="240dp"
+    />
+    <Button
+    android:id="@+id/buttonTooth24"
+    style="@style/ButtonToothTheme"
+
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/buttonTooth23"
+
+    android:layout_marginRight="220dp" />
+    <Button
+        android:id="@+id/buttonTooth25"
+        style="@style/ButtonToothTheme"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonTooth24"
+
+        android:layout_marginRight="200dp" />
+    <Button
+        android:id="@+id/buttonTooth26"
+        style="@style/ButtonToothTheme"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonTooth25"
+
+        android:layout_marginRight="180dp" />
+    <Button
+        android:id="@+id/buttonTooth27"
+        style="@style/ButtonToothTheme"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonTooth26"
+
+        android:layout_marginRight="160dp" />
+    <Button
+        android:id="@+id/buttonTooth28"
+        style="@style/ButtonToothTheme"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonTooth27"
+
+        android:layout_marginRight="140dp" />
+    <!--Buttons for tooth 11-18-->
 
 
 
