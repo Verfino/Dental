@@ -3,4 +3,6 @@
     <string name="surname">Nazwisko</string>
     <string name="name">Imię</string>
     <string name="phone">Telefon</string>
+
+    <string name="treatment_hint">Nazwa zabiegu...</string>
 </resources>
