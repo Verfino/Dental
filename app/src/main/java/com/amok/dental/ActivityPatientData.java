@@ -1,12 +1,17 @@
 package com.amok.dental;
 
+import android.app.Dialog;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
-import android.widget.MultiAutoCompleteTextView;
+import android.widget.Button;
 
 public class ActivityPatientData extends AppCompatActivity {
+    private int choosenColor = Color.BLACK;
+
     private static final String[] TREATMENTS = new String[] {
             "Leczenie kanalowe", "Mostek", "Korona", "Wyrywanie zeba","Leczenie zabkow"
     };
@@ -26,5 +31,26 @@ public class ActivityPatientData extends AppCompatActivity {
         textViewTreatment3.setAdapter(adapter);
         textViewTreatment4.setAdapter(adapter);
 
+    }
+
+    public void onClickTooth(View view) {
+        Button button = (Button) findViewById(view.getId());
+        button.setBackgroundColor(choosenColor);
+    }
+
+    public void onClickCase0(View view) {
+        choosenColor = getResources().getColor(R.color.colorCase0);
+    }
+
+    public void onClickCase1(View view) {
+        choosenColor = getResources().getColor(R.color.colorCase1);
+    }
+
+    public void onClickCase2(View view) {
+        choosenColor = getResources().getColor(R.color.colorCase2);
+    }
+
+    public void onClickCase3(View view) {
+        choosenColor = getResources().getColor(R.color.colorCase3);
     }
 }

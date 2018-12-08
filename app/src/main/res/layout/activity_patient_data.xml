@@ -64,19 +64,22 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginLeft="50dp"
-
         android:layout_marginTop="25dp"
+
+        android:onClick="onClickCase0"
         android:background="@color/colorCase0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextDateOfBirth" />
+
 
     <Button
         android:id="@+id/buttonColorCase1"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginLeft="50dp"
-
         android:layout_marginTop="25dp"
+
+        android:onClick="onClickCase1"
         android:background="@color/colorCase1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonColorCase0" />
@@ -88,6 +91,7 @@
         android:layout_marginLeft="50dp"
 
         android:layout_marginTop="25dp"
+        android:onClick="onClickCase2"
         android:background="@color/colorCase2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonColorCase1" />
@@ -99,6 +103,7 @@
         android:layout_marginLeft="50dp"
 
         android:layout_marginTop="25dp"
+        android:onClick="onClickCase3"
         android:background="@color/colorCase3"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonColorCase2" />
@@ -148,6 +153,7 @@
     <!--Buttons for tooth 21-28-->
     <Button
         android:id="@+id/buttonTooth21"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         android:layout_marginTop="50dp"
@@ -158,6 +164,7 @@
 
     <Button
         android:id="@+id/buttonTooth22"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         android:layout_marginRight="260dp"
@@ -167,6 +174,7 @@
 
     <Button
         android:id="@+id/buttonTooth23"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         android:layout_marginRight="240dp"
@@ -176,6 +184,7 @@
 
     <Button
         android:id="@+id/buttonTooth24"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         android:layout_marginRight="220dp"
@@ -185,6 +194,7 @@
 
     <Button
         android:id="@+id/buttonTooth25"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         android:layout_marginRight="200dp"
@@ -194,6 +204,7 @@
 
     <Button
         android:id="@+id/buttonTooth26"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         android:layout_marginRight="180dp"
@@ -203,6 +214,7 @@
 
     <Button
         android:id="@+id/buttonTooth27"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         android:layout_marginRight="160dp"
@@ -212,6 +224,7 @@
 
     <Button
         android:id="@+id/buttonTooth28"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         android:layout_marginRight="140dp"
@@ -222,6 +235,7 @@
 
     <Button
         android:id="@+id/buttonTooth38"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         android:layout_marginTop="35dp"
@@ -232,6 +246,7 @@
 
     <Button
         android:id="@+id/buttonTooth37"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         android:layout_marginRight="160dp"
@@ -241,6 +256,7 @@
 
     <Button
         android:id="@+id/buttonTooth36"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         android:layout_marginRight="180dp"
@@ -250,6 +266,7 @@
 
     <Button
         android:id="@+id/buttonTooth35"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         android:layout_marginRight="200dp"
@@ -259,6 +276,7 @@
 
     <Button
         android:id="@+id/buttonTooth34"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         android:layout_marginRight="220dp"
@@ -268,6 +286,7 @@
 
     <Button
         android:id="@+id/buttonTooth33"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         android:layout_marginRight="240dp"
@@ -277,6 +296,7 @@
 
     <Button
         android:id="@+id/buttonTooth32"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         android:layout_marginRight="260dp"
@@ -286,6 +306,7 @@
 
     <Button
         android:id="@+id/buttonTooth31"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         android:layout_marginRight="280dp"
@@ -303,6 +324,7 @@
     <!--Buttons for tooth 11-18-->
     <Button
         android:id="@+id/buttonTooth11"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         app:layout_constraintRight_toLeftOf="@id/buttonTooth21"
@@ -312,6 +334,7 @@
 
     <Button
         android:id="@+id/buttonTooth12"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         app:layout_constraintRight_toLeftOf="@id/buttonTooth22"
@@ -321,6 +344,7 @@
 
     <Button
         android:id="@+id/buttonTooth13"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         app:layout_constraintRight_toLeftOf="@id/buttonTooth23"
@@ -330,6 +354,7 @@
 
     <Button
         android:id="@+id/buttonTooth14"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         app:layout_constraintRight_toLeftOf="@id/buttonTooth24"
@@ -339,6 +364,7 @@
 
     <Button
         android:id="@+id/buttonTooth15"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         app:layout_constraintRight_toLeftOf="@id/buttonTooth25"
@@ -348,6 +374,7 @@
 
     <Button
         android:id="@+id/buttonTooth16"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         app:layout_constraintRight_toLeftOf="@id/buttonTooth26"
@@ -357,25 +384,29 @@
 
     <Button
         android:id="@+id/buttonTooth17"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         app:layout_constraintRight_toLeftOf="@id/buttonTooth27"
         app:layout_constraintTop_toBottomOf="@id/buttonTooth16"
 
         android:layout_marginRight="240dp"/>
+
     <Button
         android:id="@+id/buttonTooth18"
+
         style="@style/ButtonToothTheme"
 
         app:layout_constraintRight_toLeftOf="@id/buttonTooth28"
         app:layout_constraintTop_toBottomOf="@id/buttonTooth17"
-
+        android:onClick="onClickTooth"
         android:layout_marginRight="280dp"/>
 
     <!--Buttons for tooth 41-48-->
 
     <Button
         android:id="@+id/buttonTooth48"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         app:layout_constraintRight_toLeftOf="@id/buttonTooth38"
@@ -385,6 +416,7 @@
         android:layout_marginRight="280dp"/>
     <Button
         android:id="@+id/buttonTooth47"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         app:layout_constraintRight_toLeftOf="@id/buttonTooth37"
@@ -394,6 +426,7 @@
 
     <Button
         android:id="@+id/buttonTooth46"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         app:layout_constraintRight_toLeftOf="@id/buttonTooth36"
@@ -403,6 +436,7 @@
 
     <Button
         android:id="@+id/buttonTooth45"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         app:layout_constraintRight_toLeftOf="@id/buttonTooth35"
@@ -412,6 +446,7 @@
 
     <Button
         android:id="@+id/buttonTooth44"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         app:layout_constraintRight_toLeftOf="@id/buttonTooth34"
@@ -421,6 +456,7 @@
 
     <Button
         android:id="@+id/buttonTooth43"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         app:layout_constraintRight_toLeftOf="@id/buttonTooth33"
@@ -430,6 +466,7 @@
 
     <Button
         android:id="@+id/buttonTooth42"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         app:layout_constraintRight_toLeftOf="@id/buttonTooth32"
@@ -439,6 +476,7 @@
 
     <Button
         android:id="@+id/buttonTooth41"
+        android:onClick="onClickTooth"
         style="@style/ButtonToothTheme"
 
         app:layout_constraintRight_toLeftOf="@id/buttonTooth31"

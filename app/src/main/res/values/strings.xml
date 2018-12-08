@@ -4,6 +4,5 @@
     <string name="name">Imię</string>
     <string name="phone">Telefon</string>
     <string name="dateOfBirth">Data urodzenia</string>
-
     <string name="treatment_hint">Nazwa zabiegu...</string>
 </resources>
